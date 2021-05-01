@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Car Rental Service</title>
+</head>
+
+<body>
+  <!-- Header Start -->
+  <section id="header">
+    <div class="navbar bg-info p-1">
+      <div class="col-md-3 col-sm-3">
+        <a href="#" class="px-3" style="color:White!important; border-right: 1px solid white !important;"><i
+            class="fa fa-youtube"></i></a>
+        <a href="#" class="px-3" style="color:White!important; border-right: 1px solid white !important;"><i
+            class="fa fa-linkedin"></i></a>
+        <a href="#" class="px-3" style="color:White!important; border-right: 1px solid white !important;"><i
+            class="fa fa-facebook"></i></a>
+        <a href="#" class="pl-3" style="color:White!important;"><i class="fa fa-twitter"></i></a>
+      </div>
+      <div class="col-md-5 col-sm-5 text-center">
+        <a id="clock" style="color: white; border-right: 2px solid white; padding-right: 5px;"></a>
+        <a id="date" style="color: white;"></a>
+      </div>
+      <div class="col-md-3 col-sm-3 mr-5">
+        <a class="btn btn-success btn-sm float-right" href="#" role="button" data-scroll-nav="0" data-toggle="modal"
+          data-target="#modalLoginForm">Login</a>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light p-0 bg-light">
+      <div class="container">
+        <a class="navbar-brand" herf="#">CAR RENTAL SERVICE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            <li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rent</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- Header End -->
+  <!-- Banner Start -->
+  <section id="banner">
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-lg-7 pr-5" style="margin-top: 150px;">
+          <h1 class="text-white heading border-bottom">Our Service is 24/7</h1>
+          <p class="text-white text-justify" style="margin-top: 30px; font-size: 22px;">Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. At fuga saepe odit quos quae, sapiente, reprehenderit eum dolor culpa veniam
+            accusantium sint blanditiis? Accusamus neque nisi nemo est, autem consectetur!</p>
+          <hr>
+          <p class="text-white text-justify" style="margin-top: 10px; font-size: 19px;">Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. At fuga saepe odit quos quae, sapiente, reprehenderit eum dolor culpa veniam
+            accusantium sint blanditiis? Accusamus neque nisi nemo est, autem consectetur!</p>
+          <hr>
+          <p class="text-white text-center" style="font-size: 19px; font-weight: bold;"><a href="#"
+              style="text-decoration: none; color: white; cursor: pointer;">Check Us</a> <a href="#"
+              class="ml-5 btn btn-success" role="button">Login</a></p>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-5 p-1">
+          <div class="rounded border px-5 pt-2 pb-3">
+            <h1 class="heading text-center text-white pt-0">Book Your ride</h1>
+            <form action="vehicle_info.php">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Pickup Location</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option hidden>Select Pickup Location</option>
+                  <option>Chennai</option>
+                  <option>Banglore</option>
+                  <option>Patna</option>
+                  <option>Ranchi</option>
+                  <option>Kerla</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Drop Location</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option hidden>Select Drop Location</option>
+                  <option>Chennai</option>
+                  <option>Banglore</option>
+                  <option>Patna</option>
+                  <option>Ranchi</option>
+                  <option>Kerla</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="date-1">Pickup Date</label>
+                <input class="form-control" placeholder="Start Date" class="textbox-n" type="text"
+                  onfocus="(this.type='date')" id="date">
+              </div>
+              <div class="form-group">
+                <label for="date-1">Drop Date</label>
+                <input class="form-control" placeholder="End Date" class="textbox-n" type="text"
+                  onfocus="(this.type='date')" id="date">
+              </div>
+              <button type="submit" class="btn btn-primary float-right">Search Vehicle</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <!-- Banner END -->
+  <!-- Services Secton Start -->
+  <section id="services">
+    <div class="container py-5">
+      <div class="heading mb-4">
+        <h2 class="text-center">
+          Services
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+          <div class="serviceBox">
+            <div class="service-icon">
+              <span><i class="fa fa-globe"></i></span>
+            </div>
+            <h3 class="title">Web Design</h3>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas
+              veniam perferendis repudiandae sequi, dolore quisquam illum.</p>
+            <a class="read-more" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <div class="serviceBox blue">
+            <div class="service-icon">
+              <span><i class="fa fa-rocket"></i></span>
+            </div>
+            <h3 class="title">Web Development</h3>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas
+              veniam perferendis repudiandae sequi, dolore quisquam illum.</p>
+            <a class="read-more" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <div class="serviceBox blue">
+            <div class="service-icon">
+              <span><i class="fa fa-mobile"></i></span>
+            </div>
+            <h3 class="title">Web Development</h3>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas
+              veniam perferendis repudiandae sequi, dolore quisquam illum.</p>
+            <a class="read-more" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <div class="serviceBox blue">
+            <div class="service-icon">
+              <span><i class="fa fa-briefcase"></i></span>
+            </div>
+            <h3 class="title">Web Development</h3>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas
+              veniam perferendis repudiandae sequi, dolore quisquam illum.</p>
+            <a class="read-more" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <!-- Services Secton Stop -->
+  <!-- Team Section Start -->
+  <section id="team" class="mb-3">
+    <div class="container-fluid py-5">
+      <div class="heading mb-4">
+        <h1 class="text-center">Who we are ??</h1>
+      </div>
+      <div class="row d-flex">
+        <div class="col-lg-7 col-md-7 col-sm-7">
+          <div class="heading  mb-2">
+            <h3 class="text-center border-bottom">ANKIT SAURABH</h3>
+          </div>
+          <p class="text-justify mx-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, laudantium
+            non rerum velit, repellat deleniti eaque consequatur dolore magni quidem ipsum distinctio, fugiat sapiente?
+            Tempore at iste tempora nulla aliquid.
+            Vitae rerum nostrum neque facere quas asperiores labore nemo laudantium eum rem? Accusantium molestiae
+            blanditiis reiciendis facilis eligendi, et sapiente itaque eveniet eum numquam molestias. Quas odit eaque
+            asperiores dolores?
+            Sint inventore error ducimus nihil accusamus est quod maxime totam aliquam minima, dolor, mollitia
+            distinctio ratione id asperiores. Numquam amet vel delectus, eaque cumque id nisi sint iste rerum animi!
+            Minima cum eaque ad iure. Animi repudiandae aliquid quia adipisci eos. Voluptates quidem vero dicta rem
+            explicabo corporis natus, consequatur voluptas rerum quo sunt velit vitae fugiat ratione magnam assumenda.
+            Veritatis, debitis a architecto dolor voluptatem sint in voluptates reiciendis? Reiciendis, quam. Quas porro
+            repellendus qui officia id, quis placeat quam exercitationem doloribus inventore, eum doloremque deleniti
+            recusandae. Consequatur, molestiae?
+          </p>
+          <div class="social-media float-right bg-success mr-5">
+            <a href="#" class="px-3" style="color:White!important; border-right: 1px solid white !important;"><i
+                class="fa fa-youtube"></i></a>
+            <a href="#" class="px-3" style="color:White!important; border-right: 1px solid white !important;"><i
+                class="fa fa-linkedin"></i></a>
+            <a href="#" class="px-3" style="color:White!important; border-right: 1px solid white !important;"><i
+                class="fa fa-facebook"></i></a>
+            <a href="#" class="pl-3" style="color:White!important;"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-5">
+          <img src="1.jpg" alt="Image Not Available" style="width: 470px;height: 400px;"
+            class="img-responsive rounded-lg">
+        </div>
+      </div>
+      <hr>
+      <div class="row d-flex mt-3">
+        <div class="col-lg-5 col-md-5 col-sm-5">
+          <img src="1.jpg" alt="Image Not Available" style="width: 470px;height: 400px; margin-left: 100px;"
+            class="img-responsive rounded-lg">
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-7">
+          <div class="heading mb-2">
+            <h3 class="text-center border-bottom">ANKIT SAURABH</h3>
+          </div>
+          <p class="text-justify mx-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, laudantium
+            non rerum velit, repellat deleniti eaque consequatur dolore magni quidem ipsum distinctio, fugiat sapiente?
+            Tempore at iste tempora nulla aliquid.
+            Vitae rerum nostrum neque facere quas asperiores labore nemo laudantium eum rem? Accusantium molestiae
+            blanditiis reiciendis facilis eligendi, et sapiente itaque eveniet eum numquam molestias. Quas odit eaque
+            asperiores dolores?
+            Sint inventore error ducimus nihil accusamus est quod maxime totam aliquam minima, dolor, mollitia
+            distinctio ratione id asperiores. Numquam amet vel delectus, eaque cumque id nisi sint iste rerum animi!
+            Minima cum eaque ad iure. Animi repudiandae aliquid quia adipisci eos. Voluptates quidem vero dicta rem
+            explicabo corporis natus, consequatur voluptas rerum quo sunt velit vitae fugiat ratione magnam assumenda.
+            Veritatis, debitis a architecto dolor voluptatem sint in voluptates reiciendis? Reiciendis, quam. Quas porro
+            repellendus qui officia id, quis placeat quam exercitationem doloribus inventore, eum doloremque deleniti
+            recusandae. Consequatur, molestiae?
+          </p>
+          <div class="social-media float-right bg-success">
+            <a href="#" class="px-3" style="color:White!important; border-right: 1px solid white !important;"><i
+                class="fa fa-youtube"></i></a>
+            <a href="#" class="px-3" style="color:White!important; border-right: 1px solid white !important;"><i
+                class="fa fa-linkedin"></i></a>
+            <a href="#" class="px-3" style="color:White!important; border-right: 1px solid white !important;"><i
+                class="fa fa-facebook"></i></a>
+            <a href="#" class="pl-3" style="color:White!important;"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <!-- Team Section Stop -->
+  <!--Footer Section-->
+  <section id="footer">
+    <div class="footer">
+      <div class="inner-footer">
+        <div class="footer-items">
+          <h1>Description</h1>
+          <p>This web page is developed only for education purpos by Brindavan College's Students.</p>
+          <p>Brindavan College</p>
+          <p>Dwarka Nagar - 560063</p>
+          <p>Karnatka, India</p>
+        </div>
+        <div class="footer-items">
+          <h1>Our Page</h1>
+          <div class="border"></div>
+          <ul>
+            <a href="#">
+              <li>Home</li>
+            </a>
+            <a href="Offers.html">
+              <li>Offers</li>
+            </a>
+            <a href="Services.html">
+              <li>Services</li>
+            </a>
+            <a href="Contact.html">
+              <li>Ddeveloper Contact</li>
+            </a>
+            <a href="About.html">
+              <li>About us</li>
+            </a>
+          </ul>
+        </div>
+        <div class="footer-items">
+          <h2>Quick Links</h2>
+          <div class="border"></div>
+          <ul>
+            <a href="https://www.swiggy.com/">
+              <li>Swiggy</li>
+            </a>
+            <a href="https://www.zomato.com/">
+              <li>Zomato</li>
+            </a>
+            <a href="https://armorgames.com/">
+              <li>Armorgames</li>
+            </a>
+            <a href="https://www.netflix.com/in/">
+              <li>Netflix</li>
+            </a>
+            <a href="https://www.youtube.com/">
+              <li>YouTube</li>
+            </a>
+          </ul>
+        </div>
+        <div class="footer-items">
+          <h2>Contact Us</h2>
+          <div class="border"></div>
+          <ul>
+            <li><i class="fa fa-university" aria-hidden="true"></i>Brindavan College</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>+91 7361360507</li>
+            <li><i class="fa fa-whatsapp" aria-hidden="true"></i>+91 9097766119</li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="#">anandmohan2232@gmail.com</a></li>
+          </ul>
+          <div class="social-media">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://in.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        Copyright &copy; Brindavan College. All rights reserved.
+      </div>
+    </div>
+  </section>
+  <!--PopUp Login Form Code-->
+  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title font-weight-bold">Sign in</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="false">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-3">
+            <i class="fa fa-envelope prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Your Email</label>
+            <input type="email" id="defaultForm-email" name="mail" class="form-control validate"
+              placeholder="Registered E-Mail" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your Email with anyone else.</small>
+          </div>
+          <div class="md-form mb-4">
+            <i class="fa fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your Password</label>
+            <input type="password" id="defaultForm-pass" name="pass" class="form-control validate"
+              placeholder="Your Password" aria-describedby="passwordHelp">
+            <small id="passwordHelp" class="form-text text-muted">We'll never share your Password with anyone
+              else.</small>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-default btn-outline-success" onClick="window.location='Signup.html';">SignUp</button>
+          <button class="btn btn-default btn-outline-primary" onClick="window.location='Login.php';">Login</button>
+        </div>
+        <div class="frg_pass" style="margin: 0; margin-bottom: 20px;">
+          <a href="Forget Password.html"
+            style="float: right; margin-top: 0; margin-right: 100px; text-decoration: none;">Forgot Password...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--PopUp Login Form Code-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    var d = new Date();
+    var date = d.getDate();
+    var month = d.getMonth() + 1; // Since getMonth() returns month from 0-11 not 1-12
+    var year = d.getFullYear();
+    var dateStr = date + "/" + month + "/" + year;
+    document.getElementById("date").innerHTML = dateStr;
+    setInterval(showTime, 1000);
+    function showTime() {
+      let time = new Date();
+      let hour = time.getHours();
+      let min = time.getMinutes();
+      let sec = time.getSeconds();
+      am_pm = "AM";
+      if (hour > 12) {
+        hour -= 12;
+        am_pm = " PM";
+      }
+      if (hour == 0) {
+        hr = 12;
+        am_pm = " AM";
+      }
+      hour = hour < 10 ? "0" + hour : hour;
+      min = min < 10 ? "0" + min : min;
+      sec = sec < 10 ? "0" + sec : sec;
+      let currentTime = hour + ":" + min + ":" + sec + am_pm;
+      document.getElementById("clock").innerHTML = currentTime;
+    }
+    showTime();
+  </script>
+</body>
+
+</html>

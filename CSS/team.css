@@ -1,0 +1,105 @@
+.sec3{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: #f2f2f2;
+    text-align: center;
+  }
+  .contai_ner{
+    margin-top: 50px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .card_v{
+    height: 280px;
+    max-width: 350px;
+    margin: 0 20px;
+    background: white;
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  }
+  .card_v:hover{
+    height: 470px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  }
+  .card_v .img_v{
+    height: 200px;
+    width: 100%;
+  }
+  .card_v .img_v img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .card_v .top_text{
+    padding: 5px;
+  }
+  .card_v .top_text .na_me{
+    font-size: 25px;
+    font-weight: 600;
+    color: #202020;
+  }
+  .card_v .top_text p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+  }
+  .card_v .bottom_text{
+    padding: 0 20px 10px 20px;
+    margin-top: 5px;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+  }
+  .card_v:hover .bottom_text{
+    opacity: 1;
+    visibility: visible;
+  }
+  .card_v .bottom_text .text_v_a{
+    text-align: justify;
+  }
+  .card_v .bottom_text .btn_v{
+    margin: 10px 0;
+    text-align: left;
+  }
+  .card_v .bottom_text .btn_v a{
+    text-decoration: none;
+    background: #e74c3c;
+    color: #f2f2f2;
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline-flex;
+    transition: 0.2s;
+  }
+  .card_v .bottom_text .btn_v a:hover{
+    transform: scale(0.9);
+  }
+  @media screen and (max-width: 978px) {
+    .contai_ner{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .card_v{
+      max-width: 700px;
+      margin: 20px 0;
+    }
+  }
+  
+  .sec3 h3{
+    border-bottom: 2px solid red;
+    font-size: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .text_v_a p{
+    font-size: 18px;
+  }

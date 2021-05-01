@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feed Your Datails | EMS</title>
+	<script src="js/city.js"></script>
+	<link rel="stylesheet" href="CSS/test2.css">
+</head>
+<body>
+    <div class="frm">
+        <h1>More Details</h1>
+        <form method="get">
+            Father Name <input type="text" name="FatherName" id="FatherName" placeholder="Son of..."><br><br>
+            Date of Birth <input type="date" id="dob"><br><br>
+            <address>
+				Country <select required><option value="1">India</option></select><br><br> 
+                State <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select><br><br> 
+				District<select id ="state" class="form-control" required></select>
+                <script language="javascript">print_state("sts");</script>
+                <br><br> Village <input type="text" id="village" placeholder="Your Village Name..."><br><br>
+                Post Ofiice <input type="text" id="po" placeholder="Your Postal Address..."><br><br>
+				Police Station <input type="text" id="ps" placeholder="Your police Station..."><br><br>
+				Pin Code <input type="text" placeholder="Area Code...">
+			</address>
+			<br>Identification Marks <input type="text" id="mark" placeholder="Any marks Sign..."><br></br>
+			<button type="submit" formaction="SignIn.html">SUBMIT</button><br><br><br>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body{
+    background-color: azure;
+}
+h1{
+    margin: 0;padding: 0;
+    border-bottom: 2px solid red;
+    display: inline-block;
+    margin-left: 270px;
+    text-align: center;
+}
+h3{
+    margin: 0;padding: 0;
+}
+.fb{
+    padding: 10px;
+    background: #3d545f;
+    color:#fff;
+    font-size: 12px;
+    text-align: center;
+}
+.fa-home{
+    font-size: 30px;
+    border: 1px solid blue;
+    padding: 5px;
+    border-radius: 50%;
+    background: white;
+}
+.fa-home:hover{
+    background-color: red;
+    color: white;
+}

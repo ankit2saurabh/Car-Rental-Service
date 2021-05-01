@@ -1,0 +1,169 @@
+<html lang="en">
+    <head>
+        <title>Techjunkgigs</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function FillBilling(f) 
+            {
+                if(f.billingtoo.checked == true) {
+                    f.c_name.value=f.b_name.value ;
+                    f.c_add_line1.value =  f.b_add_line1.value;
+                    f.c_add_line2.value = f.b_add_line2.value;
+                    f.c_add_line3.value = f.b_add_line3.value ;
+                    f.c_gstn.value = f.b_gstn.value;
+                    f.c_contact_person.value  =  f.b_contact_person.value ;
+                    f.c_phone.value = f.b_phone.value ;
+                    f.c_email.value = f.b_email.value ;
+                }
+                else
+                {
+                    f.c_name.value = "";
+                    f.c_add_line1.value = "";
+                    f.c_add_line2.value = "";
+                    f.c_add_line3.value = "";
+                    f.c_gstn.value = "";
+                    f.c_contact_person.value = "";
+                    f.c_phone.value = "";
+                    f.c_email.value = "";
+                }
+            }
+        </script>	
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <div>
+                    <h1 style="color:green">Techjunkgigs</h1> 
+                    <h3>Copy Text From One Field To Another using CheckBox with JavaScript and PHP</h3>
+                <hr/>	  
+                </div>
+            <div class="row">
+                        <div class="col-sm-2">
+                        <div class="form-group">
+                        <label>BUYER: </label>
+                    </div>
+                        </div>
+                        <div class="col-sm-2">
+                        <div class="form-group">
+                        <label>Buyer Name: </label>
+                            <input type="text" class="form-control" id="usercity"  name="b_name" placeholder="Enter Name" required>
+                        </div>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-sm-2">
+                        <div class="form-group">
+                        <label>Address Line 1: </label>
+                            <input type="text" class="form-control" id="usercity"  name="b_add_line1" placeholder="Enter Line 1" required>
+                        </div>
+                        </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                        <label>Address Line 2: </label>
+                            <input type="text" class="form-control" id="usercity"  name="b_add_line2" placeholder="Enter Line 2" required>
+                        </div>
+                        </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                        <label>Address Line 3: </label>
+                            <input type="text" class="form-control" id="usercity"  name="b_add_line3" placeholder="Enter Line 3" required>
+                        </div>
+                        </div>
+                        <div class="col-sm-2">
+                        <div class="form-group">
+                        <label>GSTN No: </label>
+                            <input type="text" class="form-control" id="usercity"  name="b_gstn" placeholder="Enter GSTN No." required>
+                        </div>
+                        </div>
+                        </div>
+                    <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                        <label>Contact Person: </label>
+                            <input type="text" class="form-control" id="userstate"  name="b_contact_person" placeholder="Enter Person Name" required>
+                        </div>
+                        </div>
+                        <div class="col-sm-4">
+                        <div class="form-group">
+                        <label>Phone No: </label>
+                            <input type="text" class="form-control" id="usercity"  name="b_phone" placeholder="Enter Phone No." required>
+                        </div>
+                        </div>
+                        <div class="col-sm-4">
+                        <div class="form-group">
+                        <label>Email: </label>
+                            <input type="text" class="form-control" id="userstate"  name="b_email" placeholder="Enter Email" required>
+                        </div>
+                        </div>
+                        </div>
+                    <div class="row>">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                        <input type="checkbox"  name="billingtoo" onclick="FillBilling(this.form)">
+                        <label style="color:blue;">Check this box if Billing Address and Shipping Address are the same.</label>
+                        </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                        <div class="col-sm-2">
+                        <div class="form-group">
+                        <label>CONSIGN: </label>
+                        <label> </label>
+                        </div>
+                        </div>
+                        <div class="col-sm-2">
+                        <div class="form-group">
+                        <label>Name: </label>
+                            <input type="text" class="form-control" id="usercity"  name="c_name" placeholder="Enter Name" required>
+                        </div>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-sm-2">
+                        <div class="form-group">
+                        <label>Address Line 1: </label>
+                            <input type="text" class="form-control" id="usercity"  name="c_add_line1" placeholder="Enter Name" required>
+                        </div>
+                        </div>
+                        <div class="col-sm-2">
+                        <div class="form-group">
+                        <label>Address Line 2: </label>
+                            <input type="text" class="form-control" id="usercity"  name="c_add_line2" placeholder="Enter Name" required>
+                        </div>
+                        </div>
+                        <div class="col-sm-2">
+                        <div class="form-group">
+                        <label>Address Line 3: </label>
+                            <input type="text" class="form-control" id="usercity"  name="c_add_line3" placeholder="Enter Name" required>
+                        </div>
+                        </div>
+                        <div class="col-sm-2">
+                        <div class="form-group">
+                        <label>GSTN No: </label>
+                            <input type="text" class="form-control" id="usercity"  name="c_gstn" placeholder="Enter Name" required>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-sm-4">
+                        <div class="form-group">
+                        <label>Contact Person: </label>
+                            <input type="text" class="form-control" id="userstate"  name="c_contact_person" placeholder="Enter Person Name" required>
+                        </div>
+                        </div>
+                        <div class="col-sm-4">
+                        <div class="form-group">
+                        <label>Phone No: </label>
+                            <input type="text" class="form-control" id="usercity"  name="c_phone" placeholder="Enter Phone No." required>
+                        </div>
+                        </div>
+                        <div class="col-sm-4">
+                        <div class="form-group">
+                        <label>Email: </label>
+                            <input type="text" class="form-control" id="userstate"  name="c_email" placeholder="Enter Email" required>
+                        </div>
+                        </div>
+                        </div>
+            </form>
+        </div>
+    </body>
+</html>
